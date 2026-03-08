@@ -42,18 +42,18 @@ export default function SignUp() {
 
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-4'>
+    <div className='min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 flex items-center justify-center p-4'>
       <div className='w-full max-w-md'>
-        <div className='bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 border border-white/20'>
-          <h1 className='text-4xl font-bold text-center text-white mb-2'>Sign Up</h1>
-          <p className='text-center text-gray-300 text-sm mb-8'>Create your account to get started</p>
+        <div className='bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-8 border border-blue-200'>
+          <h1 className='text-4xl font-bold text-center text-blue-900 mb-2'>Sign Up</h1>
+          <p className='text-center text-blue-700 text-sm mb-8'>Create your account to get started</p>
           
           <form onSubmit={handleSubmit} className='space-y-4'>
             <div className='relative'>
               <input 
                 type="text" 
                 placeholder='Username' 
-                className='w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition duration-200' 
+                className='w-full bg-blue-50 border border-blue-300 rounded-lg px-4 py-3 text-blue-900 placeholder-blue-400 focus:outline-none focus:border-blue-500 focus:bg-white transition duration-200' 
                 id='username' 
                 onChange={handleChange}
               />
@@ -63,7 +63,7 @@ export default function SignUp() {
               <input 
                 type="email" 
                 placeholder='Email' 
-                className='w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition duration-200' 
+                className='w-full bg-blue-50 border border-blue-300 rounded-lg px-4 py-3 text-blue-900 placeholder-blue-400 focus:outline-none focus:border-blue-500 focus:bg-white transition duration-200' 
                 id='email' 
                 onChange={handleChange}
               />
@@ -73,7 +73,7 @@ export default function SignUp() {
               <input 
                 type="password" 
                 placeholder='Password' 
-                className='w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition duration-200' 
+                className='w-full bg-blue-50 border border-blue-300 rounded-lg px-4 py-3 text-blue-900 placeholder-blue-400 focus:outline-none focus:border-blue-500 focus:bg-white transition duration-200' 
                 id='password' 
                 onChange={handleChange}
               />
@@ -88,10 +88,10 @@ export default function SignUp() {
           </form>
           
           <div className='text-center mt-6'>
-            <p className='text-gray-300 text-sm'>
+            <p className='text-blue-700 text-sm'>
               Already have an account?{' '}
               <Link to="/sign-in">
-                <span className='text-blue-400 hover:text-blue-300 font-semibold transition duration-200'>Login</span>
+                <span className='text-blue-600 hover:text-blue-700 font-semibold transition duration-200'>Login</span>
               </Link>
             </p>
           </div>
